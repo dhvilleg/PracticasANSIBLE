@@ -1,0 +1,13 @@
+---
+ - name: Enable Internet
+   hosts: localhost
+   become: yes
+
+   tasks:
+     - name: Agregar Firewall
+       firewalld:
+        port: 80/tcp
+        state: enable
+        permanent: yes
+       notify: Reload firewall
+

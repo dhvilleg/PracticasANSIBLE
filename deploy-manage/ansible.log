@@ -1,0 +1,741 @@
+2022-09-15 15:41:55,486 p=25159 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 15:41:55,825 p=25159 u=root n=ansible | slave1.ansible | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: root@slave1.ansible: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2022-09-15 15:45:23,344 p=25243 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 15:45:23,690 p=25243 u=root n=ansible | slave1.ansible | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: root@slave1.ansible: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2022-09-15 15:46:36,300 p=25268 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 15:46:36,650 p=25268 u=root n=ansible | slave1.ansible | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: root@slave1.ansible: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2022-09-15 15:47:48,188 p=25300 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 15:47:50,050 p=25300 u=root n=ansible | slave2.ansible | CHANGED | rc=0 >>
+BASH=/bin/sh
+BASHOPTS=cmdhist:complete_fullquote:extquote:force_fignore:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_EXECUTION_STRING=set
+BASH_LINENO=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="4" [1]="4" [2]="20" [3]="1" [4]="release" [5]="x86_64-redhat-linux-gnu")
+BASH_VERSION='4.4.20(1)-release'
+DIRSTACK=()
+EUID=0
+GROUPS=()
+HOME=/root
+HOSTNAME=slave2.ansible
+HOSTTYPE=x86_64
+IFS=' 	
+'
+LANG=en_US.UTF-8
+LOGNAME=root
+LS_COLORS='rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:'
+MACHTYPE=x86_64-redhat-linux-gnu
+MAIL=/var/mail/root
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+POSIXLY_CORRECT=y
+PPID=18322
+PS4='+ '
+PWD=/root
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:hashall:interactive-comments:posix
+SHLVL=2
+SUDO_COMMAND='/bin/sh -c echo BECOME-SUCCESS-xrgicumjbibbouxuvjksklsjhpegnduc ; /usr/libexec/platform-python /root/.ansible/tmp/ansible-tmp-1663271268.7651238-25304-201968978975284/AnsiballZ_command.py'
+SUDO_GID=0
+SUDO_UID=0
+SUDO_USER=root
+TERM=xterm
+UID=0
+USER=root
+_=/usr/libexec/platform-python
+
+2022-09-15 15:48:26,922 p=25335 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 15:48:27,242 p=25335 u=root n=ansible | slave1.ansible | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: root@slave1.ansible: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2022-09-15 15:51:23,277 p=25412 u=root n=ansible | [WARNING]:  * Failed to parse /root/deploy-manage/inventory with yaml plugin: We were unable to read either as JSON nor YAML, these are the errors we got from
+each: JSON: Expecting value: line 1 column 2 (char 1)  Syntax Error while loading YAML.   did not find expected <document start>  The error appears to be in
+'/root/deploy-manage/inventory': line 2, column 1, but may be elsewhere in the file depending on the exact syntax problem.  The offending line appears to be:
+[myself] localhost ^ here
+
+2022-09-15 15:51:23,277 p=25412 u=root n=ansible | [WARNING]:  * Failed to parse /root/deploy-manage/inventory with ini plugin: /root/deploy-manage/inventory:5: Expected key=value host variable assignment, got:
+ansible_user
+
+2022-09-15 15:51:23,278 p=25412 u=root n=ansible | [WARNING]: Unable to parse /root/deploy-manage/inventory as an inventory source
+
+2022-09-15 15:51:23,278 p=25412 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2022-09-15 15:51:23,286 p=25412 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2022-09-15 15:52:55,653 p=25436 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 15:52:55,977 p=25436 u=root n=ansible | slave1.ansible | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: root@slave1.ansible: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2022-09-15 15:53:00,453 p=25447 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 15:53:00,787 p=25447 u=root n=ansible | slave1.ansible | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: root@slave1.ansible: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2022-09-15 15:58:50,235 p=25542 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 15:58:50,579 p=25542 u=root n=ansible | slave1.ansible | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: root@slave1.ansible: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2022-09-15 16:36:14,266 p=26093 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 16:36:16,719 p=26093 u=root n=ansible | slave1.ansible | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2022-09-15 16:36:27,558 p=26124 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 16:36:28,000 p=26124 u=root n=ansible | localhost | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: root@localhost: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2022-09-15 16:36:29,315 p=26124 u=root n=ansible | slave1.ansible | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2022-09-15 16:36:29,421 p=26124 u=root n=ansible | slave2.ansible | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2022-09-15 16:41:26,723 p=26243 u=root n=ansible | ERROR! the playbook: web could not be found
+2022-09-15 16:41:38,316 p=26246 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 16:41:38,544 p=26246 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: hqsdev1.tekneed.com
+
+2022-09-15 16:41:38,545 p=26246 u=root n=ansible | PLAY [create administrative users] ********************************************************************************************************************************
+2022-09-15 16:41:38,545 p=26246 u=root n=ansible | skipping: no hosts matched
+2022-09-15 16:41:38,546 p=26246 u=root n=ansible | PLAY RECAP ********************************************************************************************************************************************************
+2022-09-15 16:43:31,282 p=26294 u=root n=ansible | ERROR! the playbook: web could not be found
+2022-09-15 16:43:40,180 p=26297 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 16:43:40,342 p=26297 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: hqsdev1.tekneed.com
+
+2022-09-15 16:43:40,344 p=26297 u=root n=ansible | playbook: main.yml
+2022-09-15 16:43:40,344 p=26297 u=root n=ansible |   play #1 (hqsdev1.tekneed.com): create administrative users	TAGS: []
+    pattern: ['hqsdev1.tekneed.com']
+    hosts (0):
+2022-09-15 16:43:52,697 p=26305 u=root n=ansible | ERROR! the playbook: web could not be found
+2022-09-15 16:44:18,658 p=26329 u=root n=ansible | ERROR! the playbook: we could not be found
+2022-09-15 16:44:31,212 p=26333 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 16:44:31,385 p=26333 u=root n=ansible | PLAY [create administrative users] ********************************************************************************************************************************
+2022-09-15 16:44:31,418 p=26333 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************
+2022-09-15 16:45:13,503 p=26333 u=root n=ansible | ok: [slave2.ansible]
+2022-09-15 16:45:14,100 p=26333 u=root n=ansible | ok: [slave1.ansible]
+2022-09-15 16:45:14,128 p=26333 u=root n=ansible | TASK [create admin user1] *****************************************************************************************************************************************
+2022-09-15 16:45:16,006 p=26333 u=root n=ansible | fatal: [slave1.ansible]: FAILED! => {"changed": false, "msg": "Group finance does not exist"}
+2022-09-15 16:45:16,064 p=26333 u=root n=ansible | fatal: [slave2.ansible]: FAILED! => {"changed": false, "msg": "Group finance does not exist"}
+2022-09-15 16:45:16,066 p=26333 u=root n=ansible | PLAY RECAP ********************************************************************************************************************************************************
+2022-09-15 16:45:16,067 p=26333 u=root n=ansible | slave1.ansible             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-15 16:45:16,067 p=26333 u=root n=ansible | slave2.ansible             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-15 16:45:57,650 p=26403 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 16:45:57,821 p=26403 u=root n=ansible | PLAY [create administrative users] ********************************************************************************************************************************
+2022-09-15 16:45:57,835 p=26403 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************
+2022-09-15 16:46:37,619 p=26403 u=root n=ansible | ok: [slave1.ansible]
+2022-09-15 16:46:37,631 p=26403 u=root n=ansible | ok: [slave2.ansible]
+2022-09-15 16:46:37,659 p=26403 u=root n=ansible | TASK [create admin user1] *****************************************************************************************************************************************
+2022-09-15 16:46:44,549 p=26403 u=root n=ansible | changed: [slave1.ansible]
+2022-09-15 16:46:45,628 p=26403 u=root n=ansible | changed: [slave2.ansible]
+2022-09-15 16:46:45,667 p=26403 u=root n=ansible | PLAY RECAP ********************************************************************************************************************************************************
+2022-09-15 16:46:45,668 p=26403 u=root n=ansible | slave1.ansible             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-09-15 16:46:45,668 p=26403 u=root n=ansible | slave2.ansible             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-09-15 16:54:29,012 p=26579 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 16:54:29,197 p=26579 u=root n=ansible | PLAY [create administrative users] ********************************************************************************************************************************
+2022-09-15 16:54:29,219 p=26579 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************
+2022-09-15 16:55:09,893 p=26579 u=root n=ansible | ok: [slave1.ansible]
+2022-09-15 16:55:10,555 p=26579 u=root n=ansible | ok: [slave2.ansible]
+2022-09-15 16:55:10,583 p=26579 u=root n=ansible | TASK [create admin user1] *****************************************************************************************************************************************
+2022-09-15 16:55:12,089 p=26579 u=root n=ansible | ok: [slave2.ansible]
+2022-09-15 16:55:12,126 p=26579 u=root n=ansible | ok: [slave1.ansible]
+2022-09-15 16:55:12,154 p=26579 u=root n=ansible | PLAY RECAP ********************************************************************************************************************************************************
+2022-09-15 16:55:12,155 p=26579 u=root n=ansible | slave1.ansible             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-09-15 16:55:12,155 p=26579 u=root n=ansible | slave2.ansible             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-09-15 17:11:18,423 p=26928 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 17:11:18,519 p=26928 u=root n=ansible | ERROR! 'host' is not a valid attribute for a Play
+
+The error appears to be in '/root/deploy-manage/site.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: Guided Excersises
+  ^ here
+
+2022-09-15 17:14:16,302 p=26968 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 17:14:16,410 p=26968 u=root n=ansible | ERROR! 'task' is not a valid attribute for a Play
+
+The error appears to be in '/root/deploy-manage/site.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: Guided Excersises
+  ^ here
+
+2022-09-15 17:14:54,555 p=26987 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 17:14:54,651 p=26987 u=root n=ansible | ERROR! 'task' is not a valid attribute for a Play
+
+The error appears to be in '/root/deploy-manage/site.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: Guided Excersises
+  ^ here
+
+2022-09-15 17:17:15,955 p=27030 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 17:17:16,095 p=27030 u=root n=ansible | playbook: site.yml
+2022-09-15 17:17:44,959 p=27050 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 17:17:45,134 p=27050 u=root n=ansible | PLAY [Guided Excersises] ******************************************************************************************************************************************
+2022-09-15 17:17:45,149 p=27050 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************
+2022-09-15 17:18:25,296 p=27050 u=root n=ansible | ok: [slave1.ansible]
+2022-09-15 17:18:25,623 p=27050 u=root n=ansible | ok: [slave2.ansible]
+2022-09-15 17:18:25,670 p=27050 u=root n=ansible | TASK [ensure httpd installed] *************************************************************************************************************************************
+2022-09-15 17:23:35,304 p=27050 u=root n=ansible | fatal: [slave1.ansible]: FAILED! => {"changed": false, "msg": "Failed to download metadata for repo 'appstream': Cannot prepare internal mirrorlist: Curl error (6): Couldn't resolve host name for https://mirrors.rockylinux.org/mirrorlist?arch=x86_64&repo=AppStream-8 [Could not resolve host: mirrors.rockylinux.org]", "rc": 1, "results": []}
+2022-09-15 17:23:36,170 p=27050 u=root n=ansible | fatal: [slave2.ansible]: FAILED! => {"changed": false, "msg": "Failed to download metadata for repo 'appstream': Cannot prepare internal mirrorlist: Curl error (6): Couldn't resolve host name for https://mirrors.rockylinux.org/mirrorlist?arch=x86_64&repo=AppStream-8 [Could not resolve host: mirrors.rockylinux.org]", "rc": 1, "results": []}
+2022-09-15 17:23:36,172 p=27050 u=root n=ansible | PLAY RECAP ********************************************************************************************************************************************************
+2022-09-15 17:23:36,173 p=27050 u=root n=ansible | slave1.ansible             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-15 17:23:36,173 p=27050 u=root n=ansible | slave2.ansible             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-15 17:25:13,499 p=27799 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 17:25:13,698 p=27799 u=root n=ansible | PLAY [Guided Excersises] ******************************************************************************************************************************************
+2022-09-15 17:25:13,713 p=27799 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************
+2022-09-15 17:25:55,160 p=27799 u=root n=ansible | ok: [slave1.ansible]
+2022-09-15 17:25:55,340 p=27799 u=root n=ansible | ok: [slave2.ansible]
+2022-09-15 17:25:55,386 p=27799 u=root n=ansible | TASK [Ensure html exists] *****************************************************************************************************************************************
+2022-09-15 17:25:55,702 p=27799 u=root n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2022-09-15 17:25:55,702 p=27799 u=root n=ansible | fatal: [slave2.ansible]: FAILED! => {"changed": false, "msg": "Could not find or access 'files/index.html'\nSearched in:\n\t/root/deploy-manage/files/files/index.html\n\t/root/deploy-manage/files/index.html\n\t/root/deploy-manage/files/files/index.html\n\t/root/deploy-manage/files/index.html on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2022-09-15 17:25:55,705 p=27799 u=root n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2022-09-15 17:25:55,707 p=27799 u=root n=ansible | fatal: [slave1.ansible]: FAILED! => {"changed": false, "msg": "Could not find or access 'files/index.html'\nSearched in:\n\t/root/deploy-manage/files/files/index.html\n\t/root/deploy-manage/files/index.html\n\t/root/deploy-manage/files/files/index.html\n\t/root/deploy-manage/files/index.html on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2022-09-15 17:25:55,708 p=27799 u=root n=ansible | PLAY RECAP ********************************************************************************************************************************************************
+2022-09-15 17:25:55,708 p=27799 u=root n=ansible | slave1.ansible             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-15 17:25:55,709 p=27799 u=root n=ansible | slave2.ansible             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-09-15 17:28:24,091 p=27885 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 17:28:24,263 p=27885 u=root n=ansible | PLAY [Guided Excersises] ******************************************************************************************************************************************
+2022-09-15 17:28:24,278 p=27885 u=root n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************
+2022-09-15 17:29:04,315 p=27885 u=root n=ansible | ok: [slave2.ansible]
+2022-09-15 17:29:04,352 p=27885 u=root n=ansible | ok: [slave1.ansible]
+2022-09-15 17:29:04,389 p=27885 u=root n=ansible | TASK [ensure httpd is started and enable] *************************************************************************************************************************
+2022-09-15 17:29:47,461 p=27885 u=root n=ansible | changed: [slave1.ansible]
+2022-09-15 17:29:47,566 p=27885 u=root n=ansible | changed: [slave2.ansible]
+2022-09-15 17:29:47,593 p=27885 u=root n=ansible | PLAY RECAP ********************************************************************************************************************************************************
+2022-09-15 17:29:47,594 p=27885 u=root n=ansible | slave1.ansible             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-09-15 17:29:47,595 p=27885 u=root n=ansible | slave2.ansible             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-09-15 18:05:20,079 p=28556 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 18:05:20,427 p=28556 u=root n=ansible | slave1.ansible | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: student@slave1.ansible: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2022-09-15 18:05:27,296 p=28575 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 18:05:27,651 p=28575 u=root n=ansible | slave1.ansible | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: student@slave1.ansible: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2022-09-15 18:07:40,664 p=28614 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 18:07:41,003 p=28614 u=root n=ansible | slave1.ansible | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: student@slave1.ansible: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2022-09-15 18:09:17,685 p=28642 u=root n=ansible | ansible [core 2.12.2]
+  config file = /root/deploy-manage/ansible.cfg
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3.8/site-packages/ansible
+  ansible collection location = /root/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.8.12 (default, May 10 2022, 23:46:40) [GCC 8.5.0 20210514 (Red Hat 8.5.0-10)]
+  jinja version = 2.10.3
+  libyaml = True
+2022-09-15 18:09:17,686 p=28642 u=root n=ansible | Using /root/deploy-manage/ansible.cfg as config file
+2022-09-15 18:09:39,054 p=28642 u=root n=ansible | host_list declined parsing /root/deploy-manage/inventory as it did not pass its verify_file() method
+2022-09-15 18:09:39,055 p=28642 u=root n=ansible | script declined parsing /root/deploy-manage/inventory as it did not pass its verify_file() method
+2022-09-15 18:09:39,055 p=28642 u=root n=ansible | auto declined parsing /root/deploy-manage/inventory as it did not pass its verify_file() method
+2022-09-15 18:09:39,060 p=28642 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 18:09:39,061 p=28642 u=root n=ansible | Parsed /root/deploy-manage/inventory inventory source with ini plugin
+2022-09-15 18:09:39,108 p=28642 u=root n=ansible | Skipping callback 'default', as we already have a stdout callback.
+2022-09-15 18:09:39,108 p=28642 u=root n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2022-09-15 18:09:39,109 p=28642 u=root n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2022-09-15 18:09:39,180 p=28642 u=root n=ansible | META: ran handlers
+2022-09-15 18:09:39,248 p=28656 u=root n=ansible | <slave1.ansible> ESTABLISH SSH CONNECTION FOR USER: student
+2022-09-15 18:09:39,250 p=28656 u=root n=ansible | <slave1.ansible> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="student"' -o ConnectTimeout=10 -o 'ControlPath="/root/.ansible/cp/e149c59d5e"' slave1.ansible '/bin/sh -c '"'"'echo ~student && sleep 0'"'"''
+2022-09-15 18:09:39,401 p=28656 u=root n=ansible | <slave1.ansible> (255, b'', b'student@slave1.ansible: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).\r\n')
+2022-09-15 18:09:39,411 p=28642 u=root n=ansible | slave1.ansible | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: student@slave1.ansible: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2022-09-15 18:16:43,629 p=29126 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 18:16:46,591 p=29126 u=root n=ansible | slave1.ansible | CHANGED | rc=0 >>
+BASH=/bin/sh
+BASHOPTS=cmdhist:complete_fullquote:extquote:force_fignore:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_EXECUTION_STRING=set
+BASH_LINENO=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="4" [1]="4" [2]="20" [3]="1" [4]="release" [5]="x86_64-redhat-linux-gnu")
+BASH_VERSION='4.4.20(1)-release'
+DIRSTACK=()
+EUID=0
+GROUPS=()
+HOME=/root
+HOSTNAME=slave1.ansible
+HOSTTYPE=x86_64
+IFS=' 	
+'
+LANG=en_US.UTF-8
+LOGNAME=root
+LS_COLORS='rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:'
+MACHTYPE=x86_64-redhat-linux-gnu
+MAIL=/var/mail/root
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+POSIXLY_CORRECT=y
+PPID=25699
+PS4='+ '
+PWD=/home/student
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:hashall:interactive-comments:posix
+SHLVL=2
+SUDO_COMMAND='/bin/sh -c echo BECOME-SUCCESS-bmttmnvgcjxxqpupydidrrqpwrmekgku ; /usr/libexec/platform-python /home/student/.ansible/tmp/ansible-tmp-1663280204.3926108-29148-251261994775352/AnsiballZ_command.py'
+SUDO_GID=1002
+SUDO_UID=1002
+SUDO_USER=student
+TERM=xterm
+UID=0
+USER=root
+_=/usr/libexec/platform-python
+
+2022-09-15 18:16:54,582 p=29220 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 18:16:57,582 p=29220 u=root n=ansible | slave1.ansible | FAILED | rc=-1 >>
+Incorrect sudo password
+
+2022-09-15 18:33:11,854 p=33861 u=root n=ansible | ERROR! Incorrect options passed
+2022-09-15 19:10:40,066 p=34434 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 19:10:40,194 p=34434 u=root n=ansible | [WARNING]: While constructing a mapping from /root/deploy-manage/services.yml, line 2, column 3, found a duplicate dict key (tasks). Using last defined value
+only.
+
+2022-09-15 19:10:40,255 p=34434 u=root n=ansible | ERROR! couldn't resolve module/action 'firewalld'. This often indicates a misspelling, missing collection, or incorrect module path.
+
+The error appears to be in '/root/deploy-manage/services.yml': line 38, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+    - name: ensure httpd are opened on firewall
+      ^ here
+
+2022-09-15 19:12:48,426 p=34492 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 19:12:48,538 p=34492 u=root n=ansible | [WARNING]: While constructing a mapping from /root/deploy-manage/services.yml, line 2, column 3, found a duplicate dict key (tasks). Using last defined value
+only.
+
+2022-09-15 19:12:48,611 p=34492 u=root n=ansible | ERROR! couldn't resolve module/action 'firewalld'. This often indicates a misspelling, missing collection, or incorrect module path.
+
+The error appears to be in '/root/deploy-manage/services.yml': line 30, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+    - name: ensure httpd are opened on firewall
+      ^ here
+
+2022-09-15 19:13:22,015 p=34503 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 19:13:22,117 p=34503 u=root n=ansible | [WARNING]: While constructing a mapping from /root/deploy-manage/services.yml, line 2, column 3, found a duplicate dict key (tasks). Using last defined value
+only.
+
+2022-09-15 19:13:22,177 p=34503 u=root n=ansible | ERROR! couldn't resolve module/action 'firewalld'. This often indicates a misspelling, missing collection, or incorrect module path.
+
+The error appears to be in '/root/deploy-manage/services.yml': line 30, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+    - name: ensure httpd are opened on firewall
+      ^ here
+
+2022-09-15 19:21:05,134 p=34629 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-15 19:21:05,233 p=34629 u=root n=ansible | [WARNING]: While constructing a mapping from /root/deploy-manage/services.yml, line 2, column 3, found a duplicate dict key (tasks). Using last defined value
+only.
+
+2022-09-15 19:21:05,290 p=34629 u=root n=ansible | ERROR! couldn't resolve module/action 'firewalld'. This often indicates a misspelling, missing collection, or incorrect module path.
+
+The error appears to be in '/root/deploy-manage/services.yml': line 30, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+    - name: ensure httpd are opened on firewall
+      ^ here
+
+2022-09-16 15:49:40,613 p=51917 u=root n=ansible | [WARNING]: module firewalld not found in: /root/.ansible/plugins/modules:/usr/share/ansible/plugins/modules:/usr/lib/python3.8/site-
+packages/ansible/modules
+
+2022-09-16 15:51:38,629 p=51949 u=root n=ansible | [WARNING]: module firewalld not found in: /root/.ansible/plugins/modules:/usr/share/ansible/plugins/modules:/usr/lib/python3.8/site-
+packages/ansible/modules
+
+2022-09-16 15:52:44,291 p=51960 u=root n=ansible | Starting galaxy collection install process
+2022-09-16 15:52:44,299 p=51960 u=root n=ansible | Process install dependency map
+2022-09-16 15:52:44,300 p=51960 u=root n=ansible | |
+2022-09-16 15:52:44,450 p=51960 u=root n=ansible | /
+2022-09-16 15:52:44,552 p=51960 u=root n=ansible | -
+2022-09-16 15:52:44,655 p=51960 u=root n=ansible | \
+2022-09-16 15:52:44,757 p=51960 u=root n=ansible | |
+2022-09-16 15:52:44,859 p=51960 u=root n=ansible | /
+2022-09-16 15:52:44,961 p=51960 u=root n=ansible | -
+2022-09-16 15:52:45,078 p=51960 u=root n=ansible | \
+2022-09-16 15:52:45,179 p=51960 u=root n=ansible | |
+2022-09-16 15:52:45,282 p=51960 u=root n=ansible | /
+2022-09-16 15:52:45,383 p=51960 u=root n=ansible | -
+2022-09-16 15:52:45,484 p=51960 u=root n=ansible | \
+2022-09-16 15:52:45,586 p=51960 u=root n=ansible | |
+2022-09-16 15:52:45,691 p=51960 u=root n=ansible | /
+2022-09-16 15:52:45,792 p=51960 u=root n=ansible | -
+2022-09-16 15:52:45,893 p=51960 u=root n=ansible | \
+2022-09-16 15:52:45,994 p=51960 u=root n=ansible | |
+2022-09-16 15:52:46,097 p=51960 u=root n=ansible | /
+2022-09-16 15:52:46,210 p=51960 u=root n=ansible | -
+2022-09-16 15:52:46,313 p=51960 u=root n=ansible | \
+2022-09-16 15:52:46,418 p=51960 u=root n=ansible | |
+2022-09-16 15:52:46,522 p=51960 u=root n=ansible | /
+2022-09-16 15:52:46,625 p=51960 u=root n=ansible | -
+2022-09-16 15:52:46,725 p=51960 u=root n=ansible | \
+2022-09-16 15:52:46,827 p=51960 u=root n=ansible | |
+2022-09-16 15:52:46,927 p=51960 u=root n=ansible | /
+2022-09-16 15:52:47,028 p=51960 u=root n=ansible | -
+2022-09-16 15:52:47,130 p=51960 u=root n=ansible | \
+2022-09-16 15:52:47,231 p=51960 u=root n=ansible | |
+2022-09-16 15:52:47,331 p=51960 u=root n=ansible | /
+2022-09-16 15:52:47,432 p=51960 u=root n=ansible | -
+2022-09-16 15:52:47,534 p=51960 u=root n=ansible | \
+2022-09-16 15:52:47,636 p=51960 u=root n=ansible | |
+2022-09-16 15:52:47,737 p=51960 u=root n=ansible | /
+2022-09-16 15:52:47,841 p=51960 u=root n=ansible | Starting collection install process
+2022-09-16 15:52:47,845 p=51960 u=root n=ansible | |
+2022-09-16 15:52:47,848 p=51960 u=root n=ansible | Downloading https://galaxy.ansible.com/download/ansible-posix-1.4.0.tar.gz to /root/.ansible/tmp/ansible-local-519604aavi8mh/tmp9xs23555/ansible-posix-1.4.0-7idg7xrg
+2022-09-16 15:52:47,963 p=51960 u=root n=ansible | /
+2022-09-16 15:52:48,064 p=51960 u=root n=ansible | -
+2022-09-16 15:52:48,165 p=51960 u=root n=ansible | \
+2022-09-16 15:52:48,267 p=51960 u=root n=ansible | |
+2022-09-16 15:52:48,369 p=51960 u=root n=ansible | /
+2022-09-16 15:52:48,474 p=51960 u=root n=ansible | -
+2022-09-16 15:52:48,576 p=51960 u=root n=ansible | \
+2022-09-16 15:52:48,679 p=51960 u=root n=ansible | |
+2022-09-16 15:52:48,781 p=51960 u=root n=ansible | /
+2022-09-16 15:52:48,884 p=51960 u=root n=ansible | -
+2022-09-16 15:52:48,986 p=51960 u=root n=ansible | \
+2022-09-16 15:52:49,087 p=51960 u=root n=ansible | |
+2022-09-16 15:52:49,188 p=51960 u=root n=ansible | /
+2022-09-16 15:52:49,291 p=51960 u=root n=ansible | -
+2022-09-16 15:52:49,393 p=51960 u=root n=ansible | \
+2022-09-16 15:52:49,495 p=51960 u=root n=ansible | |
+2022-09-16 15:52:49,596 p=51960 u=root n=ansible | /
+2022-09-16 15:52:49,698 p=51960 u=root n=ansible | -
+2022-09-16 15:52:49,800 p=51960 u=root n=ansible | \
+2022-09-16 15:52:49,903 p=51960 u=root n=ansible | |
+2022-09-16 15:52:50,006 p=51960 u=root n=ansible | /
+2022-09-16 15:52:50,147 p=51960 u=root n=ansible | -
+2022-09-16 15:52:50,272 p=51960 u=root n=ansible | \
+2022-09-16 15:52:50,375 p=51960 u=root n=ansible | |
+2022-09-16 15:52:50,478 p=51960 u=root n=ansible | /
+2022-09-16 15:52:50,601 p=51960 u=root n=ansible | -
+2022-09-16 15:52:50,704 p=51960 u=root n=ansible | \
+2022-09-16 15:52:50,812 p=51960 u=root n=ansible | |
+2022-09-16 15:52:51,046 p=51960 u=root n=ansible | /
+2022-09-16 15:52:51,152 p=51960 u=root n=ansible | Installing 'ansible.posix:1.4.0' to '/root/.ansible/collections/ansible_collections/ansible/posix'
+2022-09-16 15:52:51,154 p=51960 u=root n=ansible | -
+2022-09-16 15:52:51,255 p=51960 u=root n=ansible | \
+2022-09-16 15:52:51,356 p=51960 u=root n=ansible | |
+2022-09-16 15:52:51,458 p=51960 u=root n=ansible | ansible.posix:1.4.0 was installed successfully
+2022-09-16 16:30:26,664 p=54199 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-16 16:30:26,765 p=54199 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/root/deploy-manage/internet.yml': line 4, column 10, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   host:localhost
+   become: yes
+         ^ here
+
+2022-09-16 16:34:58,269 p=54614 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-16 16:34:58,370 p=54614 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/root/deploy-manage/internet.yml': line 4, column 10, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   host:localhost
+   become: yes
+         ^ here
+
+2022-09-16 16:39:37,323 p=55066 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-16 16:39:37,621 p=55066 u=root n=ansible | ERROR! 'host' is not a valid attribute for a Play
+
+The error appears to be in '/root/deploy-manage/internet.yml': line 2, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+ - name: EnableInternet
+   ^ here
+
+2022-09-16 16:41:08,280 p=55096 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-16 16:41:08,380 p=55096 u=root n=ansible | ERROR! 'host' is not a valid attribute for a Play
+
+The error appears to be in '/root/deploy-manage/internet.yml': line 2, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+ - name: EnableInternet
+   ^ here
+
+2022-09-16 16:42:02,927 p=55386 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-16 16:42:03,029 p=55386 u=root n=ansible | ERROR! this task 'firewalld' has extra params, which is only allowed in the following modules: ansible.legacy.shell, ansible.builtin.win_command, raw, ansible.builtin.include_vars, shell, ansible.windows.win_command, ansible.legacy.win_shell, add_host, import_role, ansible.builtin.import_role, ansible.legacy.command, ansible.legacy.import_tasks, ansible.legacy.meta, ansible.builtin.include_role, ansible.legacy.include_tasks, win_command, include, ansible.builtin.meta, set_fact, script, ansible.builtin.import_tasks, ansible.builtin.group_by, meta, ansible.legacy.include_vars, ansible.legacy.win_command, ansible.legacy.group_by, include_tasks, ansible.legacy.include_role, ansible.builtin.include_tasks, include_role, command, ansible.legacy.set_fact, include_vars, ansible.builtin.script, ansible.legacy.import_role, ansible.builtin.shell, ansible.builtin.command, ansible.builtin.include, ansible.legacy.add_host, ansible.builtin.win_shell, ansible.builtin.raw, ansible.windows.win_shell, win_shell, import_tasks, ansible.legacy.script, ansible.legacy.raw, group_by, ansible.builtin.set_fact, ansible.builtin.add_host, ansible.legacy.include
+
+The error appears to be in '/root/deploy-manage/internet.yml': line 8, column 6, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   tasks:
+   - name: Agregar Firewall
+     ^ here
+
+2022-09-16 16:43:04,881 p=55400 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-16 16:43:04,976 p=55400 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/root/deploy-manage/internet.yml': line 8, column 16, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   - name: Agregar Firewall
+      firewalld:
+               ^ here
+
+2022-09-16 16:44:02,179 p=55414 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-16 16:44:02,276 p=55414 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/root/deploy-manage/internet.yml': line 8, column 16, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   - name: Agregar Firewall
+      firewalld:
+               ^ here
+
+2022-09-16 16:45:04,886 p=55722 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-16 16:45:04,983 p=55722 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/root/deploy-manage/internet.yml': line 8, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   - name: Agregar Firewall
+    firewalld:
+    ^ here
+
+2022-09-16 16:48:27,013 p=55910 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-16 16:48:27,126 p=55910 u=root n=ansible | ERROR! this task 'firewalld' has extra params, which is only allowed in the following modules: ansible.legacy.include, ansible.builtin.win_shell, ansible.builtin.group_by, include, ansible.builtin.set_fact, ansible.windows.win_command, ansible.builtin.add_host, include_role, ansible.legacy.set_fact, win_shell, script, ansible.legacy.meta, include_vars, import_role, ansible.legacy.shell, raw, include_tasks, ansible.builtin.include_tasks, meta, ansible.legacy.command, ansible.builtin.win_command, shell, ansible.builtin.include, ansible.builtin.meta, command, ansible.builtin.import_tasks, win_command, ansible.legacy.group_by, ansible.builtin.script, ansible.legacy.include_role, ansible.legacy.script, ansible.builtin.include_vars, ansible.legacy.include_vars, ansible.legacy.import_tasks, ansible.builtin.raw, ansible.legacy.win_command, set_fact, ansible.legacy.raw, ansible.builtin.command, add_host, group_by, ansible.legacy.add_host, ansible.legacy.win_shell, ansible.builtin.import_role, ansible.legacy.import_role, ansible.windows.win_shell, ansible.builtin.shell, ansible.builtin.include_role, ansible.legacy.include_tasks, import_tasks
+
+The error appears to be in '/root/deploy-manage/internet.yml': line 7, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   tasks:
+    - name: Agregar Firewall
+      ^ here
+
+2022-09-16 16:49:49,106 p=56216 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-16 16:49:49,222 p=56216 u=root n=ansible | ERROR! this task 'firewalld' has extra params, which is only allowed in the following modules: ansible.legacy.include, ansible.builtin.group_by, ansible.legacy.include_role, ansible.builtin.import_role, ansible.legacy.add_host, include_vars, include_role, ansible.builtin.import_tasks, meta, ansible.builtin.add_host, ansible.legacy.group_by, ansible.builtin.command, ansible.builtin.set_fact, win_command, ansible.builtin.include_tasks, ansible.windows.win_command, ansible.legacy.meta, include, ansible.builtin.win_shell, ansible.builtin.include, ansible.legacy.shell, shell, ansible.builtin.include_vars, ansible.legacy.script, ansible.builtin.meta, ansible.builtin.script, ansible.legacy.set_fact, add_host, include_tasks, ansible.legacy.include_vars, set_fact, ansible.builtin.raw, win_shell, ansible.windows.win_shell, ansible.legacy.import_tasks, ansible.legacy.win_command, ansible.legacy.import_role, command, group_by, ansible.legacy.command, import_tasks, ansible.builtin.win_command, ansible.builtin.shell, script, ansible.legacy.win_shell, ansible.builtin.include_role, ansible.legacy.include_tasks, raw, ansible.legacy.raw, import_role
+
+The error appears to be in '/root/deploy-manage/internet.yml': line 7, column 6, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   tasks:
+   - name: Agregar Firewall
+     ^ here
+
+2022-09-16 16:50:47,161 p=56229 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-16 16:50:47,256 p=56229 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  could not find expected ':'
+
+The error appears to be in '/root/deploy-manage/internet.yml': line 10, column 8, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+       port:80/tcp
+       state:enable
+       ^ here
+
+2022-09-16 16:51:15,738 p=56338 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-16 16:51:15,845 p=56338 u=root n=ansible | ERROR! this task 'firewalld' has extra params, which is only allowed in the following modules: ansible.legacy.script, raw, ansible.legacy.command, ansible.builtin.win_command, ansible.windows.win_shell, ansible.builtin.include, win_command, ansible.legacy.win_command, ansible.legacy.include_vars, add_host, ansible.legacy.import_role, group_by, ansible.builtin.meta, script, ansible.builtin.shell, ansible.legacy.add_host, ansible.builtin.import_role, ansible.builtin.import_tasks, include_role, ansible.legacy.set_fact, ansible.builtin.win_shell, ansible.builtin.script, ansible.builtin.include_vars, ansible.builtin.add_host, win_shell, import_tasks, ansible.legacy.group_by, ansible.builtin.set_fact, ansible.builtin.raw, include_tasks, ansible.legacy.include, ansible.legacy.raw, shell, ansible.builtin.command, ansible.builtin.group_by, meta, ansible.builtin.include_role, ansible.windows.win_command, ansible.legacy.include_role, ansible.legacy.meta, import_role, ansible.legacy.win_shell, include, command, ansible.builtin.include_tasks, set_fact, ansible.legacy.shell, ansible.legacy.import_tasks, include_vars, ansible.legacy.include_tasks
+
+The error appears to be in '/root/deploy-manage/internet.yml': line 7, column 8, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   tasks:
+     - name: Agregar Firewall
+       ^ here
+
+2022-09-16 16:52:03,286 p=56396 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-16 16:52:03,449 p=56396 u=root n=ansible | playbook: internet.yml
+2022-09-16 16:52:23,716 p=56408 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-16 16:52:23,933 p=56408 u=root n=ansible | PLAY [Enable Internet] ******************************************************************************************************************
+2022-09-16 16:52:23,948 p=56408 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2022-09-16 16:52:24,415 p=56408 u=root n=ansible | fatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: student@localhost: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2022-09-16 16:52:24,423 p=56408 u=root n=ansible | PLAY RECAP ******************************************************************************************************************************
+2022-09-16 16:52:24,424 p=56408 u=root n=ansible | localhost                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-09-16 16:53:27,554 p=56427 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-16 16:53:27,740 p=56427 u=root n=ansible | PLAY [Enable Internet] ******************************************************************************************************************
+2022-09-16 16:53:27,754 p=56427 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2022-09-16 16:53:27,941 p=56427 u=root n=ansible | fatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: student@localhost: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2022-09-16 16:53:27,952 p=56427 u=root n=ansible | PLAY RECAP ******************************************************************************************************************************
+2022-09-16 16:53:27,952 p=56427 u=root n=ansible | localhost                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-09-16 16:53:41,136 p=56441 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-16 16:53:41,322 p=56441 u=root n=ansible | PLAY [Enable Internet] ******************************************************************************************************************
+2022-09-16 16:53:41,336 p=56441 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2022-09-16 16:53:41,499 p=56441 u=root n=ansible | fatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: student@localhost: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2022-09-16 16:53:41,500 p=56441 u=root n=ansible | PLAY RECAP ******************************************************************************************************************************
+2022-09-16 16:53:41,500 p=56441 u=root n=ansible | localhost                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2022-09-16 18:00:31,524 p=57136 u=root n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-09-16 18:00:31,712 p=57136 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/root/deploy-manage/internet2.yml': line 5, column 17, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  hosts: slave1.ansible
+          become: yes
+                ^ here
+

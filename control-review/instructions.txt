@@ -1,0 +1,59 @@
+1) On workstation, change to the /home/student/control-review project directory.
+
+
+
+
+2) The project directory contains a partially completed playbook, playbook.yml. Using a text editor, add a task that uses the fail module under the #Fail Fast Message comment. Be sure to provide an appropriate name for the task. This task should only be executed when the remote system does not meet the minimum requirements.
+
+The minimum requirements for the remote host are listed below:
+
+Has at least the amount of RAM specified by the min_ram_mb variable. The min_ram_mb variable is defined in the vars.yml file and has a value of 256.
+
+Is running Red Hat Enterprise Linux.
+
+
+
+3) Add a single task to the playbook under the #Install all Packages comment to install the latest version of any missing packages. Required packages are specified by the packages variable, which is defined in the vars.yml file.
+
+The task name should be Ensure required packages are present.
+
+
+
+4)Add a single task to the playbook under the #Enable and start services comment to start all services. All services specified by the services variable, which is defined in the vars.yml file, should be started and enabled. Be sure to provide an appropriate name for the task.
+
+
+
+5) Add a task block to the playbook under the #Block of config tasks comment. This block contains two tasks:
+
+A task to ensure the directory specified by the ssl_cert_dir variable exists on the remote host. This directory stores the web server's certificates.
+
+A task to copy all files specified by the web_config_files variable to the remote host. Examine the structure of the web_config_files variable in the vars.yml file. Configure the task to copy each file to the correct destination on the remote host.
+
+This task should trigger the restart web service handler if any of these files are changed on the remote server.
+
+Additionally, a debug task is executed if either of the two tasks above fail. In this case, the task prints the message: One or more of the configuration changes failed, but the web service is still active.
+
+Be sure to provide an appropriate name for all tasks.
+
+
+
+6) The playbook configures the remote host to listen for standard HTTPS requests. Add a single task to the playbook under the #Configure the firewall comment to configure firewalld.
+
+This task should ensure that the remote host allows standard HTTP and HTTPS connections. These configuration changes should be effective immediately and persist after a system reboot. Be sure to provide an appropriate name for the task.
+
+
+
+
+7) Define the restart web service handler.
+
+When triggered, this task should restart the web service defined by the web_service variable, defined in the vars.yml file.
+
+
+
+8) From the project directory, ~/control-review, run the playbook.yml playbook. The playbook should execute without errors, and trigger the execution of the handler task
+
+
+
+9) Verify that the web server now responds to HTTPS requests, using the self-signed custom certificate to encrypt the connection. The web server response should match the string Configured for both HTTP and HTTPS.
+
+

@@ -1,0 +1,60 @@
+---
+- name: Enable Internet Services
+
+  hosts: slave1.ansible
+  become: yes
+
+  tasks:
+          #- name: Instalar firewall        
+          #yum:
+          # name: [firewalld, httpd, mariadb-server, php-mysqlnd] 
+          #state: latest
+    
+    - name: Enable firewalld, httpd, mariadb services
+      service:
+        name: firewalld
+        state: started
+        enabled: true
+
+    - name: Enable firewalld, httpd, mariadb services
+      service:
+        name: httpd
+        state: started
+        enabled: true
+
+    - name: Enable firewalld, httpd, mariadb services
+      service:
+        name: mariadb
+        state: started
+        enabled: true
+
+
+    - name: Enable services on firewalld
+      firewalld:
+        service: http
+        permanent: true
+        state: enabled
+        immediate: yes
+
+    - name: Enable services on firewalld
+      firewalld:
+        service: mysql
+        permanent: true
+        state: enabled
+        immediate: yes
+
+    - name: copy index file
+      copy:
+        src: files/Lab01_index.php.txt   
+        dest: /var/www/html/
+
+
+- name: Test Internet Services
+  hosts: localhost
+  become: no
+
+  tasks:
+    - name: Test webserver desde localhosr
+      uri:
+        url: http://slave1.ansible/Lab01_index.php.txt
+        return_content: yes

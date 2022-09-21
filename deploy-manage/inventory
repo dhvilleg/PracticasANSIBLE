@@ -1,0 +1,13 @@
+[myself]
+localhost
+
+[intranet]
+slave1.ansible
+
+[web-server]
+slave2.ansible
+
+[web:children]
+intranet
+web-server
+

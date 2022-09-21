@@ -1,0 +1,35 @@
+---
+- name: Guided Excersises
+  hosts: web
+  tasks: 
+    - name: ensure httpd and firewalld is started and enable 
+      service:
+        name: 
+          - httpd
+          - firewalld
+        state: stoped
+        enabled: true 
+
+  tasks:
+    - name: Copy data in to file
+      copy:
+        content: "Esto es una prueba en /var/www/html/index.html"
+        dest: /var/www/html/index.html
+
+  tasks:
+    - name: ensure httpd and firewalld is started and enable
+      service:
+        name:
+          - httpd
+          - firewalld
+        state: started
+        enabled: true
+
+
+  tasks:
+    - name: ensure httpd are opened on firewall
+      firewalld:
+        service: httpd
+        permanent: true
+        state: enabled
+        inmediate: yes

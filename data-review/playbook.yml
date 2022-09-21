@@ -1,0 +1,92 @@
+---
+
+- name: Laboratorio
+  hosts: webserver
+
+  vars:
+    firewall_pkg: firewalld
+    firewall_svc: firewalld
+    web_pkg: httpd
+    web_svc: httpd
+    web_svc_fw: http
+    ssl_pkg: mod_ssl
+    httpdconf_src: files/httpd.conf
+    httpdconf_dest: /etc/httpd/conf/httpd.conf
+    htaccess_src: files/.htaccess
+    secrets_dir: /etc/httpd/secrets
+    secrets_src: files/htpasswd
+    secrets_dest: "{{ secrets_dir }}/htpasswd"
+    web_root: /var/www/html
+
+
+  tasks: 
+    - name: Imprimir facts
+      debug:
+        var: ansible_facts     
+
+    - name: lastest version  {{ firewall_pkg }}
+      yum:
+        name: [ "{{ web_pkg }}", "{{ ssl_pkg }}", "{{ firewall_pkg }}"]
+                
+        state: latest      
+    - name: copiar archivo con privilegios y root PRIMERO
+      copy:
+        src: "{{ httpdconf_src }}"
+        dest: "{{ httpdconf_dest }}"
+        mode: 0644
+    - name: crear archivo dentro de ruta ocn permisos
+      file:
+        path: "{{ secrets_dir }}"
+        state: directory
+        owner: apache
+        group: apache
+        mode: 0500 
+    - name: copiar archivo con privilegios y SEGUDNO
+      copy:
+        src: "{{ secrets_src }}"
+        dest: "{{ secrets_dest }}"
+        mode: 0400
+        owner: apache
+        group: apache
+
+    - name: copiar archivo con privilegios yO ROOT TERCERO
+      copy:
+        src: "{{ htaccess_src }}"
+        dest: "{{ web_root }}/.htaccess"
+        mode: 0400
+        owner: apache
+        group: apache
+
+    - name: copiar archivo con privilegios y root aa "{{ web_root }}/index.html"
+      copy:
+        dest: "{{ web_root }}/index.html"
+        content: "{{ ansible_facts.architecture }} {{ ansible_facts.bios_vendor }} has been customized by Ansible."
+
+    - name: ensure  firewalld is started and enable
+      service:
+        name: "{{ firewall_svc }}" 
+        state: started
+        enabled: true
+
+    - name: ensure httpd re opened on firewall
+      firewalld:
+        service: "{{ web_svc_fw }}" 
+        permanent: true
+        state: enabled
+        immediate: yes
+
+    - name: ensure httpd  is started and enable
+      service:
+        name: "{{ web_svc }}"
+        state: started
+        enabled: true
+
+- name:  test authentication to the web server
+  hosts: localhost
+  become: false
+  vars:
+    web_user: quest
+  var_files:
+    - secret.yml
+
+      

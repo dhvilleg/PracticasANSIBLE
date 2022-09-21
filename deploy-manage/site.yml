@@ -1,0 +1,17 @@
+---
+- name: Guided Excersises
+  hosts: web
+  tasks: 
+#    - name: ensure httpd installed
+#      yum:
+#        name: httpd
+#        state: present
+#    - name: Ensure html exists
+#      copy:
+#        src: files/index.html
+#        dest: /var/www/html
+    - name: ensure httpd is started and enable 
+      service:
+        name: httpd
+        state: started
+        enabled: true 

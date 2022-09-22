@@ -1,0 +1,28 @@
+---
+- name: Install and configure webservice
+  hosts: all
+  vars:
+    - service:
+        - firewalld
+        - httpd
+    - pakage:
+        - firewalld
+        - httpd
+
+  tasks:
+    - import_tasks: tasks/install_and_enable.yml
+      vars:
+        - service:
+            - firewalld
+            - httpd
+        - pakage:
+            - firewalld
+            - httpd
+
+    - import_tasks: tasks/web_tasks.yml
+    - import_tasks: tasks/firewall_tasks.yml
+  handlers:
+    - name: restart httpd
+      service: 
+        name: httpd
+        state: restarted

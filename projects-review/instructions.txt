@@ -1,0 +1,21 @@
+1)  Simplify the list of managed hosts in the /home/student/projects-review/playbook.yml playbook by using a wildcard host pattern.
+
+
+
+2) Restructure the playbook so that the first three tasks in the playbook are kept in an external task file located at tasks/web_tasks.yml. Use the import_tasks feature to incorporate this task file into the playbook.
+
+
+
+3) Restructure the playbook so that the fourth, fifth, and sixth tasks in the playbook are kept in an external task file located at tasks/firewall_tasks.yml. Use the import_tasks feature to incorporate this task file into the playbook.
+
+
+
+
+4) There is some duplication of tasks between the tasks/web_tasks.yml and tasks/firewall_tasks.yml files. Move the tasks that install packages and enable services into a new file named tasks/install_and_enable.yml and update them to use variables. Replace the original tasks with import_tasks statements, passing in appropriate variable values.
+
+
+
+5) Verify the changes to the playbook.yml playbook were correctly made and then execute the playbook.
+
+
+

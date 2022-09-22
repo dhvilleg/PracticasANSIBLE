@@ -1,0 +1,6 @@
+- name: open the port for http
+  firewalld:
+    service: http
+    immediate: true
+    permanent: true
+    state: enabled

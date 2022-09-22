@@ -1,0 +1,9 @@
+- name: Tunning configuration install
+  copy:
+    src: files/tuned.conf
+    dest: /etc/httpd/conf.d/tuned.conf
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart httpd
+
